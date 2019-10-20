@@ -15,6 +15,7 @@ subscription {
   subscribeToNotifications{
     message
     date
+    title
   }
 }
 ```
@@ -22,7 +23,7 @@ subscription {
 
 ```
 mutation {
-  createNotification(message: "Hello")
+  createNotification(message: "Hello" title: "Alert for you!")
 }
 
 ```
