@@ -5,6 +5,9 @@ import { ObjectType, Field, InputType } from "type-graphql";
 export class Notification {
 
     @Field({ nullable: true })
+    title: string;
+
+    @Field({ nullable: true })
     message: string;
 
     @Field({ nullable: true })
